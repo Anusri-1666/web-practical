@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Overflow Properties</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+/* Overflow Visible */
+.visible{
+width:250px;
+height:100px;
+border:2px solid black;
+margin:20px auto;
+overflow:visible;
+background-color:lightblue;
+}
+
+/* Overflow Hidden */
+.hidden{
+width:250px;
+height:100px;
+border:2px solid black;
+margin:20px auto;
+overflow:hidden;
+background-color:lightgreen;
+}
+
+/* Overflow Scroll */
+.scroll{
+width:250px;
+height:100px;
+border:2px solid black;
+margin:20px auto;
+overflow:scroll;
+background-color:lightcoral;
+}
+
+/* Overflow Auto */
+.auto{
+width:250px;
+height:100px;
+border:2px solid black;
+margin:20px auto;
+overflow:auto;
+background-color:khaki;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Overflow Properties in CSS</h1>
+
+<h3>overflow: visible</h3>
+<div class="visible">
+This is a long text demonstrating the visible overflow property. Content extends outside the box and remains visible.
+</div>
+
+<h3>overflow: hidden</h3>
+<div class="hidden">
+This is a long text demonstrating the hidden overflow property. Extra content is clipped and cannot be seen outside the box.
+</div>
+
+<h3>overflow: scroll</h3>
+<div class="scroll">
+This is a long text demonstrating the scroll overflow property. Scrollbars are always displayed even if they are not required.
+</div>
+
+<h3>overflow: auto</h3>
+<div class="auto">
+This is a long text demonstrating the auto overflow property. Scrollbars appear automatically only when the content exceeds the box size.
+</div>
+
+</body>
+</html>

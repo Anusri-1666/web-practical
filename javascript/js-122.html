@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Currency Converter</title>
+</head>
+<body>
+
+<h1>Currency Converter</h1>
+
+Amount in USD:
+<input type="number" id="usd">
+
+<button onclick="convert()">
+Convert to INR
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function convert(){
+
+let usd =
+document.getElementById("usd").value;
+
+let inr = usd * 83;
+
+document.getElementById("result").innerHTML =
+"INR = ₹" + inr;
+
+}
+
+</script>
+
+</body>
+</html>

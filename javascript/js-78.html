@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Live Character Counter</title>
+</head>
+<body>
+
+<h1>Live Character Counter</h1>
+
+<textarea id="text"
+rows="5"
+cols="40"
+onkeyup="countCharacters()">
+</textarea>
+
+<h3 id="result">
+Characters: 0
+</h3>
+
+<script>
+
+function countCharacters(){
+
+let text =
+document.getElementById("text").value;
+
+document.getElementById("result")
+.innerHTML =
+"Characters: " + text.length;
+
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

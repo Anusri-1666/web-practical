@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Table</title>
+</head>
+<body>
+
+<h1>Dynamic Table Creation</h1>
+
+<button onclick="createTable()">
+Create Table
+</button>
+
+<div id="output"></div>
+
+<script>
+
+function createTable(){
+
+let table =
+"<table border='1' cellpadding='10'>";
+
+for(let i=1;i<=3;i++)
+{
+table += "<tr>";
+
+for(let j=1;j<=3;j++)
+{
+table += "<td>Row " + i +
+", Col " + j + "</td>";
+}
+
+table += "</tr>";
+}
+
+table += "</table>";
+
+document.getElementById("output").innerHTML =
+table;
+
+}
+
+</script>
+
+<br><br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

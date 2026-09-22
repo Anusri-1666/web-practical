@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random Quote Generator</title>
+</head>
+<body>
+
+<h1>Random Quote Generator</h1>
+
+<button onclick="generateQuote()">
+Generate Quote
+</button>
+
+<h3 id="quote"></h3>
+
+<script>
+
+let quotes = [
+
+"Success is the sum of small efforts.",
+
+"Practice makes a person perfect.",
+
+"Never stop learning.",
+
+"Believe in yourself.",
+
+"Hard work beats talent."
+
+];
+
+function generateQuote(){
+
+let random =
+Math.floor(Math.random()*quotes.length);
+
+document.getElementById("quote").innerHTML =
+quotes[random];
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

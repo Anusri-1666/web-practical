@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Card Layout using Flexbox</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+}
+
+.container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+width:250px;
+padding:20px;
+border:1px solid #ccc;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Card Layout using Flexbox</h1>
+
+<div class="container">
+
+<div class="card">
+<img src="https://picsum.photos/250/150?1">
+<h3>Card 1</h3>
+<p>Sample card content.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/250/150?2">
+<h3>Card 2</h3>
+<p>Sample card content.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/250/150?3">
+<h3>Card 3</h3>
+<p>Sample card content.</p>
+</div>
+
+</div>
+
+</body>
+</html>

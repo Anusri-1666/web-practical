@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change Multiple Elements</title>
+</head>
+<body>
+
+<h2 class="item">HTML</h2>
+<h2 class="item">CSS</h2>
+<h2 class="item">JavaScript</h2>
+
+<button onclick="changeAll()">
+Change All
+</button>
+
+<script>
+
+function changeAll(){
+
+let items =
+document.getElementsByClassName("item");
+
+for(let i=0;i<items.length;i++)
+{
+items[i].style.color = "red";
+items[i].style.backgroundColor =
+"yellow";
+}
+
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

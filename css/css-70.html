@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Modal Popup</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+}
+
+.popup{
+display:none;
+position:fixed;
+top:30%;
+left:35%;
+width:300px;
+padding:20px;
+background:white;
+border:2px solid black;
+box-shadow:0 0 10px gray;
+}
+
+.popup:target{
+display:block;
+}
+
+.button{
+padding:10px 20px;
+background:blue;
+color:white;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>CSS Only Modal Popup</h1>
+
+<a href="#popup" class="button">Open Popup</a>
+
+<div id="popup" class="popup">
+<h2>Popup Window</h2>
+<p>This popup is created using only CSS.</p>
+<a href="#">Close</a>
+</div>
+
+</body>
+</html>

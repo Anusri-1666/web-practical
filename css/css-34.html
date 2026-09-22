@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Opacity and Transparency</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+/* Opacity Example */
+.box1{
+width:250px;
+height:120px;
+background-color:red;
+margin:20px auto;
+opacity:1;
+color:white;
+line-height:120px;
+font-weight:bold;
+}
+
+/* 75% Visible */
+.box2{
+width:250px;
+height:120px;
+background-color:blue;
+margin:20px auto;
+opacity:0.75;
+color:white;
+line-height:120px;
+font-weight:bold;
+}
+
+/* 50% Visible */
+.box3{
+width:250px;
+height:120px;
+background-color:green;
+margin:20px auto;
+opacity:0.5;
+color:white;
+line-height:120px;
+font-weight:bold;
+}
+
+/* Transparent Background using RGBA */
+.box4{
+width:250px;
+height:120px;
+background-color:rgba(255,165,0,0.4);
+margin:20px auto;
+border:2px solid black;
+line-height:120px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Opacity and Transparency using CSS</h1>
+
+<div class="box1">
+Opacity = 1
+</div>
+
+<div class="box2">
+Opacity = 0.75
+</div>
+
+<div class="box3">
+Opacity = 0.5
+</div>
+
+<div class="box4">
+RGBA Transparency
+</div>
+
+</body>
+</html>

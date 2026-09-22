@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Theme Switcher</title>
+
+<style>
+
+.dark{
+background:black;
+color:white;
+}
+
+.light{
+background:white;
+color:black;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Theme Switcher</h1>
+
+<button onclick="setLight()">
+Light Mode
+</button>
+
+<button onclick="setDark()">
+Dark Mode
+</button>
+
+<script>
+
+function setLight(){
+
+document.body.className =
+"light";
+
+localStorage.setItem(
+"theme",
+"light"
+);
+
+}
+
+function setDark(){
+
+document.body.className =
+"dark";
+
+localStorage.setItem(
+"theme",
+"dark"
+);
+
+}
+
+window.onload = function(){
+
+let theme =
+localStorage.getItem("theme");
+
+if(theme){
+document.body.className =
+theme;
+}
+
+}
+
+</script>
+
+</body>
+</html>

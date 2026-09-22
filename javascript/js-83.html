@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mouse Events</title>
+
+<style>
+#box{
+width:300px;
+height:150px;
+background:lightblue;
+text-align:center;
+line-height:150px;
+margin:auto;
+font-size:20px;
+}
+</style>
+
+</head>
+<body>
+
+<h1 align="center">Mouse Events</h1>
+
+<div id="box"
+onmouseover="mouseOver()"
+onmouseout="mouseOut()">
+
+Move Mouse Here
+
+</div>
+
+<h3 align="center" id="result"></h3>
+
+<script>
+
+function mouseOver(){
+document.getElementById("result").innerHTML =
+"Mouse Over Event Triggered";
+}
+
+function mouseOut(){
+document.getElementById("result").innerHTML =
+"Mouse Out Event Triggered";
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

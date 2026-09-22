@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM and Events</title>
+<style>
+body{
+font-family:Arial;
+padding:20px;
+}
+.box{
+padding:20px;
+background:lightblue;
+width:300px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+
+<h1>DOM & Event Demo</h1>
+
+<div class="box" id="box">
+Click the button below
+</div>
+
+<br>
+
+<button onclick="changeContent()">
+Change Content
+</button>
+
+<script>
+
+function changeContent(){
+
+document.getElementById("box").innerHTML =
+"DOM Manipulation Successful!";
+
+}
+
+</script>
+
+<br><br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sessionStorage Demo</title>
+</head>
+<body>
+
+<h1>sessionStorage Example</h1>
+
+<input type="text" id="course">
+
+<button onclick="saveCourse()">
+Save
+</button>
+
+<button onclick="showCourse()">
+Show
+</button>
+
+<p id="result"></p>
+
+<script>
+
+function saveCourse(){
+
+sessionStorage.setItem(
+"course",
+document.getElementById("course").value
+);
+
+}
+
+function showCourse(){
+
+document.getElementById("result").innerHTML =
+sessionStorage.getItem("course");
+
+}
+
+</script>
+
+</body>
+</html>

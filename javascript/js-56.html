@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Second Largest Element</title>
+</head>
+<body>
+
+<h1>Second Largest Element</h1>
+
+<input type="text" id="array"
+placeholder="10,20,30,40">
+
+<button onclick="findSecondLargest()">
+Find
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function findSecondLargest(){
+
+let arr =
+document.getElementById("array")
+.value
+.split(",")
+.map(Number);
+
+arr.sort((a,b)=>b-a);
+
+document.getElementById("result").innerHTML =
+"Second Largest = " + arr[1];
+
+}
+
+</script>
+
+</body>
+</html>

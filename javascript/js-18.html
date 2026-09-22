@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Methods</title>
+</head>
+<body>
+
+<h1>Array Methods</h1>
+
+<input type="text" id="array"
+placeholder="10,20,30">
+
+<button onclick="processArray()">
+Process
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function processArray(){
+
+let arr =
+document.getElementById("array")
+.value
+.split(",");
+
+arr.push("100");
+
+document.getElementById("result").innerHTML =
+
+"Array = " + arr.join(", ") +
+"<br>Total Elements = " + arr.length;
+
+}
+
+</script>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

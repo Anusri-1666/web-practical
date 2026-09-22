@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Email Validation</title>
+
+<style>
+body{
+font-family:Arial;
+padding:20px;
+}
+input{
+padding:8px;
+margin:5px;
+width:250px;
+}
+button{
+padding:8px 15px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Email Validation Using Regular Expression</h1>
+
+<input
+type="text"
+id="email"
+placeholder="Enter Email Address">
+
+<button onclick="validateEmail()">
+Validate
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function validateEmail(){
+
+let email =
+document.getElementById("email").value;
+
+let pattern =
+/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(pattern.test(email))
+{
+document.getElementById("result").innerHTML =
+"Valid Email Address";
+}
+else
+{
+document.getElementById("result").innerHTML =
+"Invalid Email Address";
+}
+
+}
+
+</script>
+
+<br><br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

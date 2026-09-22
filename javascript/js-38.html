@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Slider</title>
+
+<style>
+
+body{
+text-align:center;
+font-family:Arial;
+}
+
+img{
+width:400px;
+height:250px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Image Slider</h1>
+
+<img id="slider"
+src="https://via.placeholder.com/400x250?text=Image+1">
+
+<br><br>
+
+<button onclick="previousImage()">
+Previous
+</button>
+
+<button onclick="nextImage()">
+Next
+</button>
+
+<script>
+
+let images = [
+
+"https://via.placeholder.com/400x250?text=Image+1",
+
+"https://via.placeholder.com/400x250?text=Image+2",
+
+"https://via.placeholder.com/400x250?text=Image+3"
+
+];
+
+let index = 0;
+
+function nextImage(){
+
+index++;
+
+if(index >= images.length)
+{
+index = 0;
+}
+
+document.getElementById("slider").src =
+images[index];
+
+}
+
+function previousImage(){
+
+index--;
+
+if(index < 0)
+{
+index = images.length - 1;
+}
+
+document.getElementById("slider").src =
+images[index];
+
+}
+
+</script>
+
+<br><br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

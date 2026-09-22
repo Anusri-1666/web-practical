@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Cart</title>
+</head>
+<body>
+
+<h1>Shopping Cart using localStorage</h1>
+
+<input
+type="text"
+id="item"
+placeholder="Enter Product">
+
+<button onclick="addItem()">
+Add Item
+</button>
+
+<ul id="cart"></ul>
+
+<script>
+
+function addItem(){
+
+let item =
+document.getElementById("item").value;
+
+let cart =
+JSON.parse(
+localStorage.getItem("cart")
+) || [];
+
+cart.push(item);
+
+localStorage.setItem(
+"cart",
+JSON.stringify(cart)
+);
+
+displayCart();
+
+}
+
+function displayCart(){
+
+let cart =
+JSON.parse(
+localStorage.getItem("cart")
+) || [];
+
+let output="";
+
+cart.forEach(function(product){
+
+output += "<li>" +
+product +
+"</li>";
+
+});
+
+document.getElementById("cart")
+.innerHTML = output;
+
+}
+
+displayCart();
+
+</script>
+
+</body>
+</html>

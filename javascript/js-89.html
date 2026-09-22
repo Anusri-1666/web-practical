@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Delegation</title>
+</head>
+<body>
+
+<h1>Event Delegation</h1>
+
+<ul id="list">
+
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+
+</ul>
+
+<script>
+
+document.getElementById("list")
+.addEventListener("click", function(event){
+
+if(event.target.tagName === "LI")
+{
+alert(
+"You clicked: " +
+event.target.innerText
+);
+}
+
+});
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

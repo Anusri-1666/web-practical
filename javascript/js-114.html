@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Number Guessing Game</title>
+</head>
+<body align="center">
+
+<h1>Number Guessing Game</h1>
+
+<input
+type="number"
+id="guess">
+
+<button onclick="checkGuess()">
+Guess
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+let number =
+Math.floor(Math.random()*10)+1;
+
+function checkGuess(){
+
+let guess =
+document.getElementById("guess").value;
+
+if(guess == number)
+{
+document.getElementById("result").innerHTML =
+"You Win!";
+}
+else
+{
+document.getElementById("result").innerHTML =
+"Try Again";
+}
+
+}
+
+</script>
+
+</body>
+</html>

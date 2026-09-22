@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Pseudo Elements</title>
+
+<style>
+
+h1::before{
+    content:"★ ";
+    color:red;
+}
+
+h1::after{
+    content:" ★";
+    color:red;
+}
+
+p::first-letter{
+    font-size:40px;
+    color:blue;
+}
+
+p::first-line{
+    font-weight:bold;
+    color:green;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Pseudo Elements Demo</h1>
+
+<p>
+
+CSS pseudo elements allow styling
+specific parts of an element.
+This paragraph demonstrates
+first-letter and first-line.
+
+</p>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

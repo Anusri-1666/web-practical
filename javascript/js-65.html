@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Character Frequency</title>
+</head>
+<body>
+
+<h1>Character Frequency in String</h1>
+
+<input type="text" id="text"
+placeholder="Enter Text">
+
+<button onclick="findFrequency()">
+Find Frequency
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function findFrequency(){
+
+let text =
+document.getElementById("text").value;
+
+let frequency = {};
+
+for(let char of text)
+{
+frequency[char] =
+(frequency[char] || 0) + 1;
+}
+
+let output = "";
+
+for(let key in frequency)
+{
+output += key + " = " +
+frequency[key] + "<br>";
+}
+
+document.getElementById("result").innerHTML =
+output;
+
+}
+
+</script>
+
+</body>
+</html>

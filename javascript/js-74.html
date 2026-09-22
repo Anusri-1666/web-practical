@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Class Demo</title>
+
+<style>
+
+.highlight{
+background-color:yellow;
+color:red;
+padding:10px;
+font-size:30px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1 id="text">
+JavaScript DOM
+</h1>
+
+<button onclick="addClass()">
+Add Class
+</button>
+
+<button onclick="removeClass()">
+Remove Class
+</button>
+
+<script>
+
+function addClass(){
+
+document.getElementById("text")
+.classList.add("highlight");
+
+}
+
+function removeClass(){
+
+document.getElementById("text")
+.classList.remove("highlight");
+
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

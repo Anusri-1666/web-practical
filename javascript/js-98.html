@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Validation Errors</title>
+
+<style>
+
+.error{
+color:red;
+font-size:14px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Dynamic Validation Errors</h1>
+
+Name:
+<input type="text" id="name">
+<span id="nameError" class="error"></span>
+
+<br><br>
+
+Email:
+<input type="text" id="email">
+<span id="emailError" class="error"></span>
+
+<br><br>
+
+<button onclick="validateForm()">
+Submit
+</button>
+
+<script>
+
+function validateForm(){
+
+document.getElementById("nameError").innerHTML="";
+document.getElementById("emailError").innerHTML="";
+
+let valid=true;
+
+let name=
+document.getElementById("name").value;
+
+let email=
+document.getElementById("email").value;
+
+if(name==""){
+document.getElementById("nameError").innerHTML=
+" Name Required";
+valid=false;
+}
+
+if(email==""){
+document.getElementById("emailError").innerHTML=
+" Email Required";
+valid=false;
+}
+
+if(valid){
+alert("Form Submitted Successfully");
+}
+
+}
+
+</script>
+
+</body>
+</html>

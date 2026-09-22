@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dropdown Event</title>
+</head>
+<body>
+
+<h1>Dropdown Selection Event</h1>
+
+<select onchange="showCourse()" id="course">
+
+<option value="">Select Course</option>
+
+<option>BCA</option>
+
+<option>BSc CS</option>
+
+<option>BCom</option>
+
+<option>MCA</option>
+
+</select>
+
+<h3 id="result"></h3>
+
+<script>
+
+function showCourse(){
+
+let course =
+document.getElementById("course").value;
+
+document.getElementById("result").innerHTML =
+"Selected Course: " + course;
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

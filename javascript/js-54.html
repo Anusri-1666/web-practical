@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loan EMI Calculator</title>
+</head>
+<body>
+
+<h1>Loan EMI Calculator</h1>
+
+<input type="number" id="loan"
+placeholder="Loan Amount">
+
+<input type="number" id="months"
+placeholder="Months">
+
+<button onclick="calculateEMI()">
+Calculate EMI
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function calculateEMI(){
+
+let loan =
+Number(document.getElementById("loan").value);
+
+let months =
+Number(document.getElementById("months").value);
+
+let emi =
+(loan / months).toFixed(2);
+
+document.getElementById("result").innerHTML =
+"Monthly EMI = ₹" + emi;
+
+}
+
+</script>
+
+</body>
+</html>

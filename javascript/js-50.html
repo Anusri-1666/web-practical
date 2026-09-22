@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Currency Converter</title>
+</head>
+<body>
+
+<h1>Currency Converter</h1>
+
+<input type="number"
+id="rupees"
+placeholder="Indian Rupees">
+
+<button onclick="convertCurrency()">
+Convert
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function convertCurrency(){
+
+let rupees =
+Number(document.getElementById("rupees").value);
+
+let dollars =
+(rupees / 83).toFixed(2);
+
+document.getElementById("result").innerHTML =
+"US Dollars = $" + dollars;
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

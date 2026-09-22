@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Delete Rows</title>
+</head>
+<body>
+
+<h1>Add/Delete Table Rows</h1>
+
+<table border="1" id="myTable">
+
+<tr>
+<th>Name</th>
+</tr>
+
+<tr>
+<td>Student 1</td>
+</tr>
+
+</table>
+
+<br>
+
+<button onclick="addRow()">
+Add Row
+</button>
+
+<button onclick="deleteRow()">
+Delete Row
+</button>
+
+<script>
+
+function addRow(){
+
+let table =
+document.getElementById("myTable");
+
+let row =
+table.insertRow();
+
+let cell =
+row.insertCell(0);
+
+cell.innerHTML =
+"New Student";
+
+}
+
+function deleteRow(){
+
+let table =
+document.getElementById("myTable");
+
+if(table.rows.length > 2)
+{
+table.deleteRow(
+table.rows.length - 1
+);
+}
+
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Navigator Object</title>
+</head>
+<body>
+
+<h1>Navigator Object</h1>
+
+<button onclick="showInfo()">
+Show Browser Information
+</button>
+
+<p id="result"></p>
+
+<script>
+
+function showInfo(){
+
+document.getElementById("result").innerHTML =
+
+"Browser: " + navigator.appName +
+"<br>Platform: " + navigator.platform +
+"<br>User Agent: " + navigator.userAgent;
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Dropdown</title>
+</head>
+<body>
+
+<h1>Dynamic Dropdown List</h1>
+
+<input
+type="text"
+id="course"
+placeholder="Enter Course Name">
+
+<button onclick="addCourse()">
+Add Course
+</button>
+
+<br><br>
+
+<select id="courseList">
+<option>Select Course</option>
+</select>
+
+<script>
+
+function addCourse(){
+
+let course =
+document.getElementById("course").value;
+
+let option =
+document.createElement("option");
+
+option.text = course;
+
+document.getElementById("courseList")
+.add(option);
+
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

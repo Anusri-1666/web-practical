@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort Array</title>
+</head>
+<body>
+
+<h1>Sort an Array</h1>
+
+<input type="text" id="array"
+placeholder="50,20,80,10">
+
+<button onclick="sortArray()">
+Sort
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function sortArray(){
+
+let arr =
+document.getElementById("array")
+.value
+.split(",")
+.map(Number);
+
+arr.sort(function(a,b){
+return a-b;
+});
+
+document.getElementById("result").innerHTML =
+"Sorted Array = " +
+arr.join(", ");
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

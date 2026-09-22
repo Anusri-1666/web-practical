@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Session Storage Example</title>
+</head>
+<body>
+
+<h1>Session Storage Example</h1>
+
+<input
+type="text"
+id="course"
+placeholder="Enter Course">
+
+<button onclick="saveCourse()">
+Save
+</button>
+
+<button onclick="loadCourse()">
+Load
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function saveCourse(){
+
+let course =
+document.getElementById("course").value;
+
+sessionStorage.setItem("course",course);
+
+alert("Course Saved");
+
+}
+
+function loadCourse(){
+
+document.getElementById("result").innerHTML =
+"Stored Course: " +
+sessionStorage.getItem("course");
+
+}
+
+</script>
+
+<br><br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

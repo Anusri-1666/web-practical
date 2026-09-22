@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Live Search Filter</title>
+</head>
+<body>
+
+<h1>Live Search Filter</h1>
+
+<input
+type="text"
+id="search"
+onkeyup="searchItems()"
+placeholder="Search Item">
+
+<ul id="list">
+
+<li>Apple</li>
+<li>Banana</li>
+<li>Mango</li>
+<li>Orange</li>
+<li>Grapes</li>
+
+</ul>
+
+<script>
+
+function searchItems(){
+
+let input =
+document.getElementById("search")
+.value
+.toLowerCase();
+
+let items =
+document.getElementById("list")
+.getElementsByTagName("li");
+
+for(let i=0;i<items.length;i++)
+{
+let text =
+items[i].innerHTML.toLowerCase();
+
+if(text.includes(input))
+{
+items[i].style.display = "";
+}
+else
+{
+items[i].style.display = "none";
+}
+}
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Character Counter</title>
+
+<style>
+
+textarea{
+width:400px;
+height:120px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Character Counter</h1>
+
+<textarea
+id="text"
+onkeyup="countCharacters()"
+placeholder="Type Here">
+</textarea>
+
+<h3 id="result">
+Characters: 0
+</h3>
+
+<script>
+
+function countCharacters(){
+
+let text =
+document.getElementById("text").value;
+
+document.getElementById("result").innerHTML =
+"Characters: " + text.length;
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

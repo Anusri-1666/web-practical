@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Country State City</title>
+</head>
+<body>
+
+<h1>Country → State → City</h1>
+
+<select id="country"
+onchange="showStates()">
+
+<option>Select Country</option>
+<option value="India">India</option>
+
+</select>
+
+<select id="state"
+onchange="showCities()">
+
+<option>Select State</option>
+
+</select>
+
+<select id="city">
+
+<option>Select City</option>
+
+</select>
+
+<script>
+
+function showStates(){
+
+let state =
+document.getElementById("state");
+
+state.innerHTML =
+"<option>Telangana</option>" +
+"<option>Andhra Pradesh</option>";
+
+}
+
+function showCities(){
+
+let selected =
+document.getElementById("state").value;
+
+let city =
+document.getElementById("city");
+
+if(selected=="Telangana")
+{
+city.innerHTML =
+"<option>Hyderabad</option>" +
+"<option>Warangal</option>";
+}
+else
+{
+city.innerHTML =
+"<option>Vijayawada</option>" +
+"<option>Visakhapatnam</option>";
+}
+
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

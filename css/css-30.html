@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Background Images and Positioning</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+/* Background Image with Center Position */
+.box1{
+height:200px;
+border:2px solid black;
+margin:20px;
+background-image:url("https://picsum.photos/600/200");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+color:white;
+font-size:24px;
+padding-top:80px;
+}
+
+/* Background Image Top Left */
+.box2{
+height:200px;
+border:2px solid black;
+margin:20px;
+background-image:url("https://picsum.photos/300/200");
+background-repeat:no-repeat;
+background-position:top left;
+}
+
+/* Background Image Bottom Right */
+.box3{
+height:200px;
+border:2px solid black;
+margin:20px;
+background-image:url("https://picsum.photos/250/200");
+background-repeat:no-repeat;
+background-position:bottom right;
+}
+
+/* Repeated Background */
+.box4{
+height:200px;
+border:2px solid black;
+margin:20px;
+background-image:url("https://picsum.photos/100");
+background-repeat:repeat;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Background Images and Background Positioning</h1>
+
+<div class="box1">
+Center Position with Cover
+</div>
+
+<div class="box2">
+Background Position: Top Left
+</div>
+
+<div class="box3">
+Background Position: Bottom Right
+</div>
+
+<div class="box4">
+Repeated Background Image
+</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Number Guessing Game</title>
+</head>
+<body>
+
+<h1>Number Guessing Game</h1>
+
+<p>
+Guess a number between 1 and 10
+</p>
+
+<input type="number" id="guess">
+
+<button onclick="checkGuess()">
+Submit
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+let randomNumber =
+Math.floor(Math.random()*10)+1;
+
+function checkGuess(){
+
+let userGuess =
+Number(document.getElementById("guess").value);
+
+if(userGuess === randomNumber)
+{
+document.getElementById("result").innerHTML =
+"Correct Guess!";
+}
+else
+{
+document.getElementById("result").innerHTML =
+"Wrong Guess. Number was " +
+randomNumber;
+}
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

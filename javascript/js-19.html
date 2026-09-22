@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Objects in JavaScript</title>
+
+<style>
+body{
+font-family:Arial;
+padding:20px;
+}
+
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Objects in JavaScript</h1>
+
+<p>
+Click the button to display object properties.
+</p>
+
+<button onclick="showObject()">
+Show Object Details
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+const student = {
+
+name: "Anusri",
+
+rollNo: 101,
+
+course: "B.Sc Computer Science",
+
+college: "Sai University"
+
+};
+
+function showObject(){
+
+document.getElementById("result").innerHTML =
+
+"Name : " + student.name +
+
+"<br>Roll No : " + student.rollNo +
+
+"<br>Course : " + student.course +
+
+"<br>College : " + student.college;
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

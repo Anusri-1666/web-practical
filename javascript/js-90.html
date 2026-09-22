@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keyboard Controlled Game</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+}
+
+#gameArea{
+width:500px;
+height:300px;
+border:2px solid black;
+margin:auto;
+position:relative;
+overflow:hidden;
+}
+
+#player{
+width:50px;
+height:50px;
+background:red;
+position:absolute;
+top:125px;
+left:225px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Keyboard Controlled Game</h1>
+
+<p>Use Arrow Keys to Move the Box</p>
+
+<div id="gameArea">
+<div id="player"></div>
+</div>
+
+<script>
+
+let player =
+document.getElementById("player");
+
+let x = 225;
+let y = 125;
+
+document.addEventListener("keydown",function(event){
+
+if(event.key==="ArrowLeft"){
+x -= 10;
+}
+
+if(event.key==="ArrowRight"){
+x += 10;
+}
+
+if(event.key==="ArrowUp"){
+y -= 10;
+}
+
+if(event.key==="ArrowDown"){
+y += 10;
+}
+
+player.style.left = x + "px";
+player.style.top = y + "px";
+
+});
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+|
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

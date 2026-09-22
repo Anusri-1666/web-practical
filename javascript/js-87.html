@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Bubbling</title>
+
+<style>
+
+#parent{
+padding:40px;
+background:lightblue;
+}
+
+#child{
+padding:30px;
+background:orange;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Event Bubbling</h1>
+
+<div id="parent">
+
+Parent Div
+
+<div id="child">
+Child Div
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("parent")
+.addEventListener("click",function(){
+
+alert("Parent Clicked");
+
+});
+
+document.getElementById("child")
+.addEventListener("click",function(){
+
+alert("Child Clicked");
+
+});
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

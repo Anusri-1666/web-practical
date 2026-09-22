@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Date and Math Objects</title>
+
+<style>
+body{
+font-family:Arial;
+padding:20px;
+}
+
+button{
+padding:10px 20px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Date and Math Objects</h1>
+
+<button onclick="showDetails()">
+Show Date & Math Details
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function showDetails(){
+
+let today = new Date();
+
+let randomNumber =
+Math.floor(Math.random() * 100);
+
+let squareRoot =
+Math.sqrt(64);
+
+let power =
+Math.pow(5,3);
+
+document.getElementById("result").innerHTML =
+
+"Current Date : " + today +
+
+"<br><br>Random Number : " + randomNumber +
+
+"<br>Square Root of 64 : " + squareRoot +
+
+"<br>5 Power 3 : " + power;
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

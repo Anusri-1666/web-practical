@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Regular Expressions Demo</title>
+
+<style>
+body{
+font-family:Arial;
+padding:20px;
+}
+input{
+padding:8px;
+margin:5px;
+}
+button{
+padding:8px 15px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Regular Expressions in JavaScript</h1>
+
+<input
+type="text"
+id="text"
+placeholder="Enter Text">
+
+<button onclick="checkPattern()">
+Check Pattern
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function checkPattern(){
+
+let text =
+document.getElementById("text").value;
+
+let pattern = /^[A-Za-z]+$/;
+
+if(pattern.test(text))
+{
+document.getElementById("result").innerHTML =
+"Valid: Contains only alphabets";
+}
+else
+{
+document.getElementById("result").innerHTML =
+"Invalid: Contains other characters";
+}
+
+}
+
+</script>
+
+<br><br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

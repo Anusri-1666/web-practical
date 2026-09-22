@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Filter Table Records</title>
+</head>
+<body>
+
+<h1>Search / Filter Table Records</h1>
+
+<input
+type="text"
+id="search"
+onkeyup="filterTable()"
+placeholder="Search Student">
+
+<br><br>
+
+<table border="1" id="studentTable">
+
+<tr>
+<th>Name</th>
+</tr>
+
+<tr>
+<td>Ravi</td>
+</tr>
+
+<tr>
+<td>Anu</td>
+</tr>
+
+<tr>
+<td>Kiran</td>
+</tr>
+
+<tr>
+<td>Priya</td>
+</tr>
+
+</table>
+
+<script>
+
+function filterTable(){
+
+let input =
+document.getElementById("search")
+.value.toLowerCase();
+
+let rows =
+document.getElementById("studentTable")
+.getElementsByTagName("tr");
+
+for(let i=1;i<rows.length;i++)
+{
+let text =
+rows[i].innerText.toLowerCase();
+
+rows[i].style.display =
+text.includes(input)
+? ""
+: "none";
+}
+
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

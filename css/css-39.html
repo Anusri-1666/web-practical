@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dropdown Menu</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+}
+
+.dropdown{
+position:relative;
+display:inline-block;
+}
+
+.button{
+background:blue;
+color:white;
+padding:12px 20px;
+cursor:pointer;
+}
+
+.content{
+display:none;
+position:absolute;
+background:white;
+min-width:160px;
+box-shadow:0 0 10px gray;
+}
+
+.content a{
+display:block;
+padding:10px;
+text-decoration:none;
+color:black;
+}
+
+.content a:hover{
+background:#ddd;
+}
+
+.dropdown:hover .content{
+display:block;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Dropdown Menu</h1>
+
+<div class="dropdown">
+
+<div class="button">
+Courses
+</div>
+
+<div class="content">
+<a href="#">HTML</a>
+<a href="#">CSS</a>
+<a href="#">JavaScript</a>
+<a href="#">React</a>
+</div>
+
+</div>
+
+</body>
+</html>

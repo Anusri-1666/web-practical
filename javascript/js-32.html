@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keyboard Events</title>
+</head>
+<body>
+
+<h1>Keyboard Events</h1>
+
+<input
+type="text"
+id="textbox"
+onkeyup="showKey()"
+placeholder="Type Something">
+
+<h3 id="result"></h3>
+
+<script>
+
+function showKey(){
+
+let text =
+document.getElementById("textbox").value;
+
+document.getElementById("result").innerHTML =
+"You Typed: " + text;
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

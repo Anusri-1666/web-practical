@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drag and Drop Application</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+}
+
+#dragItem{
+width:120px;
+padding:20px;
+background:orange;
+margin:auto;
+cursor:move;
+}
+
+#dropZone{
+width:350px;
+height:200px;
+border:3px dashed black;
+margin:30px auto;
+padding:20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Drag and Drop Application</h1>
+
+<div
+id="dragItem"
+draggable="true"
+ondragstart="drag(event)">
+Drag Me
+</div>
+
+<div
+id="dropZone"
+ondrop="drop(event)"
+ondragover="allowDrop(event)">
+Drop Here
+</div>
+
+<script>
+
+function allowDrop(event){
+event.preventDefault();
+}
+
+function drag(event){
+event.dataTransfer.setData(
+"text",
+event.target.id
+);
+}
+
+function drop(event){
+
+event.preventDefault();
+
+let data =
+event.dataTransfer.getData("text");
+
+event.target.appendChild(
+document.getElementById(data)
+);
+
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+|
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

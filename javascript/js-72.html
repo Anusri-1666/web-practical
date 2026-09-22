@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ID and Class Demo</title>
+</head>
+<body>
+
+<h1 id="title">
+Hello Student
+</h1>
+
+<p class="text">
+Paragraph 1
+</p>
+
+<p class="text">
+Paragraph 2
+</p>
+
+<button onclick="demoDOM()">
+Run Demo
+</button>
+
+<script>
+
+function demoDOM(){
+
+document.getElementById("title")
+.innerHTML =
+"Title Changed Using ID";
+
+let paragraphs =
+document.getElementsByClassName("text");
+
+for(let i=0;i<paragraphs.length;i++)
+{
+paragraphs[i].style.color = "green";
+paragraphs[i].style.fontWeight =
+"bold";
+}
+
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

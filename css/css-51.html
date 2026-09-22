@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fixed Sidebar</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:200px;
+height:100%;
+background:#333;
+color:white;
+padding:20px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+margin:15px 0;
+}
+
+.content{
+margin-left:220px;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>Menu</h2>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+
+<div class="content">
+<h1>Fixed Sidebar Example</h1>
+<p>This content remains scrollable while the sidebar stays fixed.</p>
+</div>
+
+</body>
+</html>

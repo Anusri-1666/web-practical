@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup Form</title>
+</head>
+<body>
+
+<h1>Signup Form</h1>
+
+Password:
+<input type="password" id="password">
+<br><br>
+
+Confirm Password:
+<input type="password" id="confirm">
+<br><br>
+
+<button onclick="validatePassword()">
+Submit
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function validatePassword(){
+
+let password=
+document.getElementById("password").value;
+
+let confirm=
+document.getElementById("confirm").value;
+
+if(password===confirm){
+document.getElementById("result").innerHTML=
+"Passwords Match";
+}
+else{
+document.getElementById("result").innerHTML=
+"Passwords Do Not Match";
+}
+
+}
+
+</script>
+
+</body>
+</html>

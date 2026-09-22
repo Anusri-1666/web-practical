@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Parse and Stringify</title>
+</head>
+<body>
+
+<h1>JSON Parse and Stringify</h1>
+
+<button onclick="showJSON()">
+Show Result
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function showJSON(){
+
+let student = {
+
+name:"Anusri",
+
+course:"BSc CS",
+
+age:20
+
+};
+
+let jsonString =
+JSON.stringify(student);
+
+let parsedObject =
+JSON.parse(jsonString);
+
+document.getElementById("result").innerHTML =
+
+"JSON String:<br>" +
+jsonString +
+
+"<br><br>Name: " +
+parsedObject.name;
+
+}
+
+</script>
+
+<br><br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

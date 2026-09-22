@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notes App</title>
+</head>
+<body>
+
+<h1>Notes Application</h1>
+
+<textarea id="note"></textarea>
+
+<br><br>
+
+<button onclick="saveNote()">
+Save Note
+</button>
+
+<button onclick="loadNote()">
+Load Note
+</button>
+
+<script>
+
+function saveNote(){
+
+localStorage.setItem(
+"note",
+document.getElementById("note").value
+);
+
+}
+
+function loadNote(){
+
+document.getElementById("note").value =
+localStorage.getItem("note");
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Countdown Timer</title>
+</head>
+<body>
+
+<h1>Countdown Timer</h1>
+
+<input type="number"
+id="time"
+placeholder="Seconds">
+
+<button onclick="startTimer()">
+Start
+</button>
+
+<h2 id="display"></h2>
+
+<script>
+
+function startTimer(){
+
+let time =
+Number(document.getElementById("time").value);
+
+let interval =
+setInterval(function(){
+
+document.getElementById("display").innerHTML =
+time;
+
+time--;
+
+if(time < 0)
+{
+clearInterval(interval);
+
+document.getElementById("display").innerHTML =
+"Time Up!";
+}
+
+},1000);
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

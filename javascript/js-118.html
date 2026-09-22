@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Cart</title>
+</head>
+<body>
+
+<h1>Shopping Cart</h1>
+
+<input type="text" id="item">
+
+<button onclick="addItem()">
+Add Item
+</button>
+
+<ul id="cart"></ul>
+
+<script>
+
+function addItem(){
+
+let item =
+document.getElementById("item").value;
+
+let li =
+document.createElement("li");
+
+li.innerHTML = item;
+
+document.getElementById("cart")
+.appendChild(li);
+
+}
+
+</script>
+
+</body>
+</html>

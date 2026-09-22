@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback Form</title>
+</head>
+<body>
+
+<h1>Feedback Form</h1>
+
+<form onsubmit="return submitFeedback()">
+
+Name:
+<input type="text" id="name">
+<br><br>
+
+Feedback:
+<br>
+
+<textarea id="feedback"
+rows="5"
+cols="30"></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<h3 id="result"></h3>
+
+<script>
+
+function submitFeedback(){
+
+let name=
+document.getElementById("name").value;
+
+let feedback=
+document.getElementById("feedback").value;
+
+if(name=="" || feedback==""){
+document.getElementById("result").innerHTML=
+"Please Fill All Fields";
+}
+else{
+document.getElementById("result").innerHTML=
+"Thank You For Your Feedback";
+}
+
+return false;
+}
+
+</script>
+
+</body>
+</html>

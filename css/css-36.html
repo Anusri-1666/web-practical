@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Z-Index and Stacking Order</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+/* Common Style */
+.box{
+width:200px;
+height:120px;
+position:absolute;
+color:white;
+font-size:20px;
+font-weight:bold;
+padding-top:50px;
+}
+
+/* Box 1 */
+.box1{
+background:red;
+top:150px;
+left:150px;
+z-index:1;
+}
+
+/* Box 2 */
+.box2{
+background:green;
+top:190px;
+left:200px;
+z-index:2;
+}
+
+/* Box 3 */
+.box3{
+background:blue;
+top:230px;
+left:250px;
+z-index:3;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Z-Index and Stacking Order</h1>
+
+<p>
+The blue box appears on top because it has the highest z-index.
+</p>
+
+<div class="box box1">
+Z-Index 1
+</div>
+
+<div class="box box2">
+Z-Index 2
+</div>
+
+<div class="box box3">
+Z-Index 3
+</div>
+
+</body>
+</html>

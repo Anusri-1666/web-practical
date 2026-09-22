@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sum of Digits</title>
+<style>
+body{
+font-family:Arial;
+padding:20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Sum of Digits</h1>
+
+<input type="number" id="num"
+placeholder="Enter Number">
+
+<button onclick="findSum()">
+Find Sum
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function findSum(){
+
+let num =
+document.getElementById("num").value;
+
+let sum = 0;
+
+for(let digit of num)
+{
+sum += Number(digit);
+}
+
+document.getElementById("result").innerHTML =
+"Sum of Digits = " + sum;
+
+}
+
+</script>
+
+<br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>

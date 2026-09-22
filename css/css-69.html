@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sliding Card Animation</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+overflow:hidden;
+}
+
+.card{
+width:250px;
+padding:20px;
+background:lightblue;
+margin:100px auto;
+border-radius:10px;
+animation:slide 4s infinite;
+}
+
+@keyframes slide{
+0%{transform:translateX(-300px);}
+50%{transform:translateX(300px);}
+100%{transform:translateX(-300px);}
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Sliding Card Animation</h1>
+
+<div class="card">
+<h3>Animated Card</h3>
+<p>This card slides left and right.</p>
+</div>
+
+</body>
+</html>

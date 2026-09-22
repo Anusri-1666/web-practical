@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>querySelector Demo</title>
+</head>
+<body>
+
+<h1 class="heading">Heading 1</h1>
+<h1 class="heading">Heading 2</h1>
+
+<button onclick="changeElements()">
+Change Elements
+</button>
+
+<script>
+
+function changeElements(){
+
+document.querySelector(".heading")
+.style.color = "red";
+
+let items =
+document.querySelectorAll(".heading");
+
+items.forEach(function(item){
+
+item.style.backgroundColor =
+"yellow";
+
+});
+
+}
+
+</script>
+
+<hr>
+
+<a href="../index.html">Home</a>
+<a href="index.html">JavaScript Programs</a>
+
+</body>
+</html>

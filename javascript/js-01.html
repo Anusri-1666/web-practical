@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World</title>
+<style>
+body{
+font-family:Arial;
+text-align:center;
+padding:30px;
+}
+button{
+padding:10px 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Hello World Program</h1>
+
+<p>Click the button to display a message.</p>
+
+<button onclick="showMessage()">
+Show Message
+</button>
+
+<h2 id="output"></h2>
+
+<script>
+function showMessage(){
+document.getElementById("output").innerHTML =
+"Hello World";
+}
+</script>
+
+<br><br>
+
+<a href="../index.html">Home</a>
+<a href="index.html">Back</a>
+
+</body>
+</html>
